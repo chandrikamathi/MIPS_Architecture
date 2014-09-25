@@ -1,0 +1,68 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'FSM' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Updating design information... (UID-85)
+Warning: Design 'FSM' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FSM
+Version: F-2011.09
+Date   : Sat Apr 19 00:42:48 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu025_stdcells
+Wire Load Model Mode: enclosed (min_block_size=100.000000)
+
+  Startpoint: EX_stage_inst/pipeline_reg_out_reg_22_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MEM_stage_inst/pipeline_reg_out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  EX_stage_inst/pipeline_reg_out_reg_22_/CLK (DFFPOSX1)
+                                                          0.00 #     0.00 r
+  EX_stage_inst/pipeline_reg_out_reg_22_/Q (DFFPOSX1)     0.91       0.91 r
+  EX_stage_inst/pipeline_reg_out[22] (EX_stage)           0.00       0.91 r
+  MEM_stage_inst/pipeline_reg_in[22] (MEM_stage)          0.00       0.91 r
+  MEM_stage_inst/dmem/mem_access_addr[0] (data_mem)       0.00       0.91 r
+  MEM_stage_inst/dmem/U8588/Y (BUFX2)                     0.97       1.88 r
+  MEM_stage_inst/dmem/U8587/Y (BUFX2)                     0.97       2.84 r
+  MEM_stage_inst/dmem/U2020/Y (BUFX2)                     0.97       3.81 r
+  MEM_stage_inst/dmem/U169/Y (BUFX2)                      0.98       4.79 r
+  MEM_stage_inst/dmem/U10391/Y (MUX2X1)                   0.35       5.14 f
+  MEM_stage_inst/dmem/U9004/Y (MUX2X1)                    0.12       5.27 r
+  MEM_stage_inst/dmem/U10393/Y (MUX2X1)                   0.09       5.36 f
+  MEM_stage_inst/dmem/U9007/Y (MUX2X1)                    0.12       5.48 r
+  MEM_stage_inst/dmem/U10399/Y (MUX2X1)                   0.09       5.57 f
+  MEM_stage_inst/dmem/U9018/Y (MUX2X1)                    0.12       5.69 r
+  MEM_stage_inst/dmem/U10421/Y (MUX2X1)                   0.09       5.78 f
+  MEM_stage_inst/dmem/U9061/Y (MUX2X1)                    0.11       5.89 r
+  MEM_stage_inst/dmem/mem_read_data[0] (data_mem)         0.00       5.89 r
+  MEM_stage_inst/U5/Y (AND2X1)                            0.09       5.99 r
+  MEM_stage_inst/pipeline_reg_out_reg_5_/D (DFFPOSX1)     0.00       5.99 r
+  data arrival time                                                  5.99
+
+  clock clk (rise edge)                                 100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  MEM_stage_inst/pipeline_reg_out_reg_5_/CLK (DFFPOSX1)
+                                                          0.00     100.00 r
+  library setup time                                     -0.25      99.75
+  data required time                                                99.75
+  --------------------------------------------------------------------------
+  data required time                                                99.75
+  data arrival time                                                 -5.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                       93.76
+
+
+1

@@ -1,0 +1,31 @@
+Warning: Design 'FSM' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : FSM
+Version: F-2011.09
+Date   : Fri Apr 18 23:40:05 2014
+****************************************
+
+Library(s) Used:
+
+    osu025_stdcells (File: /cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db)
+
+Number of ports:                           10
+Number of nets:                           228
+Number of cells:                            6
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       6
+
+Combinational area:       1021695.000000
+Noncombinational area:    955836.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          1977531.000000
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

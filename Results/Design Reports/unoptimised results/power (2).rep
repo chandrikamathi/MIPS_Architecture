@@ -1,0 +1,57 @@
+Loading db file '/cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : FSM
+Version: F-2011.09
+Date   : Fri Apr 18 23:40:08 2014
+****************************************
+
+
+Library(s) Used:
+
+    osu025_stdcells (File: /cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu025_stdcells
+Wire Load Model Mode: enclosed (min_block_size=100.000000)
+
+Design        Wire Load Model            Library
+------------------------------------------------
+
+
+Global Operating Voltage = 2.5  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  14.4237 mW   (31%)
+  Net Switching Power  =  32.3214 mW   (69%)
+                         ---------
+Total Dynamic Power    =  46.7451 mW  (100%)
+
+Cell Leakage Power     =   2.3410 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.1528           31.4567          103.0639           31.6096  (  67.62%)
+register          13.8128        3.3100e-02        1.1255e+03           13.8469  (  29.62%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.4582            0.8317        1.1126e+03            1.2910  (   2.76%)
+--------------------------------------------------------------------------------------------------
+Total             14.4238 mW        32.3214 mW     2.3411e+03 nW        46.7475 mW
+1

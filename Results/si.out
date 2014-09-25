@@ -1,0 +1,90 @@
+@(#)$CDS: LVS.exe version 5.1.0 01/27/2011 00:12 (cicln04) $
+
+Command line: /home/apps/cds/ic5141/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /home/users/3/rchamala/LVS -l -s -t /home/users/3/rchamala/LVS/layout /home/users/3/rchamala/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/users/3/rchamala/LVS/layout/netlist
+       count
+	11		nets
+	5		terminals
+	9		pmos
+	9		nmos
+
+    Net-list summary for /home/users/3/rchamala/LVS/schematic/netlist
+       count
+	11		nets
+	5		terminals
+	9		pmos
+	9		nmos
+
+
+    Terminal correspondence points
+    N3        N4        CLK
+    N9        N9        D
+    N8        N8        Q
+    N2        N1        gnd!
+    N0        N0        vdd!
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			18	18
+	total			18	18
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			11	11
+	total			11	11
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			5	5
+
+
+Probe files from /home/users/3/rchamala/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/users/3/rchamala/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

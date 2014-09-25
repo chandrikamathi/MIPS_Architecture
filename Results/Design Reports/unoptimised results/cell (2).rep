@@ -1,0 +1,32 @@
+Warning: Design 'FSM' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : FSM
+Version: F-2011.09
+Date   : Fri Apr 18 23:40:05 2014
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+EX_stage_inst             EX_stage                        60036.000000
+                                                                    h, n
+ID_stage_inst             ID_stage                        0.000000  b
+IF_stage_inst             IF_stage                        9585.000000
+                                                                    h, n
+MEM_stage_inst            MEM_stage                       1810716.000000
+                                                                    h, n
+WB_stage_inst             WB_stage                        2772.000000
+                                                                    h, n
+register_file_inst        register_file                   94422.000000
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 6 cells                                             1977531.000000
+1
